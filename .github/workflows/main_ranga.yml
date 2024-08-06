@@ -27,7 +27,7 @@ jobs:
       - name: dotnet publish
         run: |
           dir
-          dotnet publish  -c Release -o ${{env.DOTNET_ROOT}}\\dotnetcoresample\\
+          dotnet publish dotnetcoresample.csproj -c Release -o "${{env.DOTNET_ROOT}}\\dotnetcoresample\\"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
