@@ -26,7 +26,6 @@ jobs:
 
       - name: dotnet publish
         run: |
-          cd "${{env.DOTNET_ROOT}}"
           dir
           dotnet publish  -c Release -o ${{env.DOTNET_ROOT}}\\dotnetcoresample\\
 
